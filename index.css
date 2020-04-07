@@ -1,0 +1,28 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    font-size:22px;
+    background-color:white;
+    text-align:center;
+
+}
+
+.bio, footer {
+    text-align:left;
+    background-color:gray;
+    padding: 10px 0;
+
+}
+
+nav {
+    position:fixed;
+    margin-bottom:10px;
+}
+
+section {
+    padding: 10% 0;
+    min-height:180px;
+    background-color: aquamarine;
+}
