@@ -16,7 +16,7 @@ body {
     color: white;
 }
   
-.navbar > .content {
+.navbar{
     width: 970px;
     height: 70px;
     margin: 0 auto;
@@ -52,21 +52,19 @@ a:visited {
   
 #portfolio {
     padding-top: 200px; width: 970px; margin: 0 auto;  text-align: center;
+    background-color:#838994;
 }
 
 #resume {
     padding-top:200px; margin:0 auto; text-align: center;
+    background-color:grey;
 }
 
-img {
-      border: 2px black solid; margin: 0 20px; margin-bottom: 40px;
-}
 
-.contact-info {
-    width: 970px; height: 70px; color: white; margin: 0 auto;
-}
 
-footer div ul li {
+
+
+div ul li {
     display: inline-block; margin-left: 50px; font-size: 20px; margin-top: 20px; margin-right:50px;
 }
 
