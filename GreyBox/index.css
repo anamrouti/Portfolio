@@ -5,6 +5,8 @@
 
 body {
     font-family: sans-serif;
+    background-color: lightblue;
+    display:block;
 }
 
 .navbar {
@@ -15,6 +17,7 @@ body {
 
 .main {
     display:column;
+    width:auto;
     margin-top:20px;
     background-color: darkslategrey;
 }
@@ -25,3 +28,8 @@ body {
     background:grey;
 }
 
+.section{
+    height:100px;
+    width:auto;
+    background-color:grey;
+}
