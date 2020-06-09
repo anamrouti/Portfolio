@@ -6,8 +6,8 @@ body {
 .navbar {
     position: fixed;
     width: 100%;
-    background-color: #19706f;
-    z-index: 9990;
+    background-color: #5a5a5a;
+    
 }
 .name {
     display: inline-block;
