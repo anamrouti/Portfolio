@@ -84,4 +84,8 @@ div ul li {
     ul.links {
         padding: 0;
     }
+
+    #navbar {
+        display:none;
+    }
   }
