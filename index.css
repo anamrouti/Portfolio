@@ -1,15 +1,25 @@
+* {
+    box-sizing:border-box;
+}
+
 body {
     box-sizing: border-box;
-    margin-top: 0px;
+    margin: 0;
+    padding:0;
 }
   
 .navbar {
     position: fixed;
     width: 100%;
-    background-color: #5a5a5a;
-    
+    background-color: #5a5a5a; 
 }
-.name {
+
+.hamburger {
+    color:white;
+    margin-left: 10px;
+}
+
+.bio {
     display: inline-block;
     font-size: 40px;
     margin-top: 10px;
@@ -42,7 +52,7 @@ nav div ul li:hover {
 }
   
 a {
-    color: white;
+    color:black;
     text-decoration: none;
 }
   
@@ -55,11 +65,25 @@ a:visited {
     background-color:#838994;
 }
 
-#resume {
-    padding-top:200px; margin:0 auto; text-align: center;
+.bio {
+    font-weight:3;
+    padding:4 4 auto auto;
+}
+
+.projects {
+    padding-top:20px; margin:0 auto; text-align: center;
     background-color:grey;
 }
 
+#contact-me {
+    
+    display:inline;
+    justify-content:space-around;
+}
+
+.links {
+list-style-type:none;
+}
 
 
 
@@ -68,7 +92,7 @@ div ul li {
     display: inline-block; margin-left: 50px; font-size: 20px; margin-top: 20px; margin-right:50px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .image {
       display: block;
       margin-bottom: 10px;
@@ -78,14 +102,77 @@ div ul li {
     }
     
     #portfolio {
-      width: 100%;
+        display:flex;
+        flex-direction:column;
+        width: 100%;
     }
   
     ul.links {
         padding: 0;
     }
 
-    #navbar {
+    .links {
         display:none;
     }
+  }
+
+  @media only screen and (min-width:500px) and (max-width:740px){
+      .navbar {
+          display:inline-flex;
+          width:100%;
+          font-size:15px;
+          color:black;
+      }
+
+      .projects {
+          display:flex;
+          flex-direction:column;
+          border: 2px solid black;
+          text-align:center;
+          font-size:16px;
+          margin-bottom:20px;
+      }
+
+      .hamburger{
+          visibility: hidden;
+      }
+
+
+  }
+
+  @media only screen and (min-width:800px){
+      .navbar {
+          display:inline-flex;
+          width:100%;
+          text-align:center;
+          margin:2px 2px 0 0;
+      }
+
+      #resume {
+          display:flex;
+          flex-direction:column;   
+      }
+
+      .projects {
+          display:flex;
+          flex-direction:row;
+          width:60%;
+          height:auto;
+          background-color: grey;
+      }
+
+      .hamburger {
+          visibility:hidden;
+      }
+
+      .contact-me {
+          display:flex;
+          justify-content: space-around;
+      }
+
+      .links {
+        list-style-type:none;
+        display:inline;
+      }
+
   }
