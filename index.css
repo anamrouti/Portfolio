@@ -6,8 +6,25 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding:0;
+    line-height:30px;
 }
-  
+
+.head{
+    align-self:center;
+    align-content:center;
+    font-weight:7;
+    font-size:20px;
+    text-align:center;
+    margin-right:40px;
+    margin-left:10px;
+}
+
+.profile{
+    width:170px;
+    height:130px;
+    margin-bottom:20px;
+    margin-left:10px
+}
 .navbar {
     position: fixed;
     width: 100%;
@@ -19,20 +36,28 @@ body {
     margin-left: 10px;
 }
 
-.bio {
+#bio {
     display: inline-block;
-    font-size: 40px;
+    font-size: 26px;
     margin-top: 10px;
-    color: white;
+    line-height:30px;
 }
-  
+
+.bioText {
+    font-size:34px;
+    color:white;
+    margin-top:10px;
+    text-align:center;
+    padding: 0 0 10px 10px;
+    font-weight:6;
+}
 .navbar{
     width: 970px;
     height: 70px;
     margin: 0 auto;
 }
   
-.navbar .links {
+.navbar .navLinks {
     float: right;
     color: #838994;
     font-size: 16px;
@@ -45,7 +70,11 @@ body {
     color: white;
 }
   
-  
+#projects {
+    width:inherit;
+    margin-top:50px;
+    text-align:center;
+}
   
 nav div ul li:hover {
     cursor: pointer;
@@ -61,8 +90,10 @@ a:visited {
 }
   
 #portfolio {
-    padding-top: 200px; width: 970px; margin: 0 auto;  text-align: center;
+    padding-top: 30px;   text-align: center;
     background-color:#838994;
+    width:970px;
+    
 }
 
 .bio {
@@ -85,11 +116,16 @@ a:visited {
 list-style-type:none;
 }
 
-
+.imgQuizApp{
+    align-self:center;
+    align-content:center;
+    display:flex;
+    width:400px;
+}
 
 
 div ul li {
-    display: inline-block; margin-left: 50px; font-size: 20px; margin-top: 20px; margin-right:50px;
+    display: inline-block; margin-left: 20px; font-size: 20px; margin-top: 20px; margin-right:20px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -101,6 +137,16 @@ div ul li {
         margin: 0 auto;
     }
     
+    .profile {
+        margin-left:0;
+        margin-top:2px;
+        margin-bottom:0;
+    }
+
+    .head {
+        margin-left:auto;
+        margin-right:120px;
+    }
     #portfolio {
         display:flex;
         flex-direction:column;
@@ -119,9 +165,10 @@ div ul li {
   @media only screen and (min-width:800px){
       .navbar {
           display:inline-flex;
-          width:100%;
+          width:inherit;
           text-align:center;
           margin:2px 2px 0 0;
+          color:white;
       }
 
       #resume {
@@ -129,18 +176,31 @@ div ul li {
           flex-direction:column;   
       }
 
-      .projects {
+      #projects {
+          width:inherit;
+          font-size:32px;
+          color:blueviolet;
+          line-height:26px;
           display:flex;
-          flex-direction:row;
-          width:60%;
+
+      }
+      ul.projects {
+          display:flex;
+          flex-direction:column;
+          width:inherit;
           height:auto;
-          background-color: grey;
+          background-color:gold;
       }
 
       .hamburger {
           visibility:hidden;
       }
 
+      .imgQuizApp {
+          width:540px;
+          margin-left:auto;
+          margin-right:auto;
+      }
       .contact-me {
           display:block;
           justify-content: space-between;
