@@ -9,53 +9,48 @@ body {
     line-height:30px;
 }
 
-.head{
-    align-self:center;
-    align-content:flex-end;
-    font-weight:7;
-    font-size:20px;
-    text-align:center;
-    margin-right:40px;
-    margin-left:30px;
-}
-
-.profile{
-    width:170px;
-    height:130px;
-    margin-bottom:20px;
-    margin-left:10px
-}
 .navbar {
     position: fixed;
-    width: 100%;
+    max-width:970px;
     background-color: #5a5a5a; 
     display:flex;
     flex-direction:row;
+
 }
 
 .navLinks {
-    align-items: flex-end;
+    align-items: center;
     display:inline-block;
     font-size:24px;
     color:white;
+    
 
 }
-.hamburger {
-    color:white;
-    margin-left: 10px;
+
+.container {
+    width:400px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+
 }
+
 
 #bio {
     display: inline-block;
     font-size: 26px;
     margin-top: 10px;
     line-height:30px;
+    text-align:center;
+    width:inherit;
 }
 
 .bioText {
     font-size:34px;
     color:white;
     margin-top:10px;
+    margin-left:5px;
+    margin-right:5px;
     text-align:center;
     padding: 0 0 10px 10px;
     font-weight:6;
@@ -83,8 +78,10 @@ li {
     list-style-type:none;
 }
 #projects {
-    width:inherit;
-    margin-top:50px;
+    display: inline-block;
+    font-size: 26px;
+    margin-top: 50px;
+    line-height:30px;
     text-align:center;
 }
   
@@ -119,9 +116,11 @@ a:visited {
 }
 
 #contact-me {
-    
-    display:inline;
-    justify-content:space-around;
+    display: inline-block;
+    font-size: 26px;
+    margin-top: 10px;
+    line-height:30px;
+    text-align:center;
 }
 
 .links {
@@ -140,53 +139,24 @@ div ul li {
     display: inline-block; margin-left: 20px; font-size: 20px; margin-top: 20px; margin-right:20px;
 }
 
-@media only screen and (max-width: 500px) {
-    .image {
-      display: block;
-      margin-bottom: 10px;
-    }
-    img {
-        margin: 0 auto;
-    }
-    
-    .profile {
-        margin-left:0;
-        margin-top:2px;
-        margin-bottom:0;
-    }
-
-    .head {
-        margin-left:auto;
-        margin-right:120px;
-    }
-    #portfolio {
-        display:flex;
-        flex-direction:column;
-        width: 100%;
-    }
-  
-    ul.links {
-        padding: 0;
-    }
-
-    .links {
-        display:none;
-    }
-  }
 
   @media only screen and (min-width:800px){
-      .navbar {
+    .container {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-left:10px;
+        margin-right:20px;
+    }  
+    .navbar {
           display:inline-flex;
-          width:inherit;
+          width:auto;
           text-align:center;
           margin:2px 2px 0 0;
           color:white;
       }
 
-      #resume {
-          display:flex;
-          flex-direction:column;   
-      }
+      
 
       #projects {
           width:inherit;
@@ -204,9 +174,6 @@ div ul li {
           background-color:gold;
       }
 
-      .hamburger {
-          visibility:hidden;
-      }
 
       .imgQuizApp {
           width:540px;
