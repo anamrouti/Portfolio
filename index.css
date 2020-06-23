@@ -11,12 +11,12 @@ body {
 
 .head{
     align-self:center;
-    align-content:center;
+    align-content:flex-end;
     font-weight:7;
     font-size:20px;
     text-align:center;
     margin-right:40px;
-    margin-left:10px;
+    margin-left:30px;
 }
 
 .profile{
@@ -29,8 +29,17 @@ body {
     position: fixed;
     width: 100%;
     background-color: #5a5a5a; 
+    display:flex;
+    flex-direction:row;
 }
 
+.navLinks {
+    align-items: flex-end;
+    display:inline-block;
+    font-size:24px;
+    color:white;
+
+}
 .hamburger {
     color:white;
     margin-left: 10px;
@@ -57,19 +66,22 @@ body {
     margin: 0 auto;
 }
   
-.navbar .navLinks {
+.navbar .links {
     float: right;
     color: #838994;
     font-size: 16px;
     margin-top: 25px;
 }
   
-.navbar .links li {
+.navbar .navLinks li {
     display: inline-block;
     margin-left: 30px;
     color: white;
 }
   
+li {
+    list-style-type:none;
+}
 #projects {
     width:inherit;
     margin-top:50px;
