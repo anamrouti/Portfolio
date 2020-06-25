@@ -6,46 +6,79 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding:0;
+    line-height:30px;
 }
-  
+.container {
+    width:90%;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    background-color:lightcyan;
+}
+
 .navbar {
     position: fixed;
-    width: 100%;
+    width:90%;
+    height:70px;
     background-color: #5a5a5a; 
+    display:flex;
+    flex-direction:row;
+
 }
 
-.hamburger {
+.navLinks {
+    align-items: center;
+    display:inline-block;
+    font-size:24px;
     color:white;
-    margin-left: 10px;
+    
+
 }
 
-.bio {
+
+
+#bio {
     display: inline-block;
-    font-size: 40px;
-    margin-top: 10px;
-    color: white;
+    font-size: 26px;
+    margin-top: 40px;
+    line-height:30px;
+    text-align:center;
 }
-  
-.navbar{
-    width: 970px;
-    height: 70px;
-    margin: 0 auto;
+
+.bioText {
+    font-size:34px;
+    color:white;
+    margin-top:10px;
+    margin-left:5px;
+    margin-right:5px;
+    text-align:center;
+    padding: 0 0 10px 10px;
+    font-weight:6;
 }
-  
+
 .navbar .links {
-    float: right;
     color: #838994;
+    align-self:flex-start;
     font-size: 16px;
     margin-top: 25px;
 }
   
-.navbar .links li {
+.navbar .navLinks li {
     display: inline-block;
-    margin-left: 30px;
     color: white;
 }
   
-  
+li {
+    list-style-type:none;
+}
+#projects {
+    display: inline-block;
+    font-size: 26px;
+    color:blueviolet;
+    margin-top: 50px;
+    line-height:30px;
+    text-align:center;
+}
   
 nav div ul li:hover {
     cursor: pointer;
@@ -59,98 +92,130 @@ a {
 a:visited {
     color: inherit;
 }
-  
-#portfolio {
-    padding-top: 200px; width: 970px; margin: 0 auto;  text-align: center;
-    background-color:#838994;
-}
-
-.bio {
-    font-weight:3;
-    padding:4 4 auto auto;
-}
 
 .projects {
-    padding-top:20px; margin:0 auto; text-align: center;
-    background-color:grey;
+    padding-top:20px; text-align: center;
+    background-color:gold;
 }
 
 #contact-me {
-    
-    display:inline;
-    justify-content:space-around;
+    display: inline-block;
+    font-size: 26px;
+    margin-top: 10px;
+    line-height:30px;
+    text-align:center;
 }
 
-.links {
-list-style-type:none;
+
+.imgQuizApp{
+    align-self:center;
+    align-content:center;
+    display:flex;
+    max-width:400px;
 }
 
-
-
+.FindMyRatingImg {
+    height:500px;
+    align-self:center;
+    align-content:center;
+    display:flex;
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
+}
 
 div ul li {
-    display: inline-block; margin-left: 50px; font-size: 20px; margin-top: 20px; margin-right:50px;
+    display: inline-block; margin-left: 10px; font-size: 20px; margin-top: 20px; margin-right:10px;
 }
 
-@media only screen and (max-width: 500px) {
-    .image {
-      display: block;
-      margin-bottom: 10px;
-    }
-    img {
-        margin: 0 auto;
-    }
-    
-    #portfolio {
-        display:flex;
-        flex-direction:column;
-        width: 100%;
-    }
-  
-    ul.links {
-        padding: 0;
-    }
+.coding{
+    font-weight:4;
+    margin-top:10px;
+}
 
-    .links {
-        display:none;
-    }
-  }
+.projectIntro {
+    display:block;
+    font-size:28px;
+    color:peachpuff;
+    width:auto;
+    background-color:purple;
+    font-weight:7;
+}
 
   @media only screen and (min-width:800px){
-      .navbar {
+    .container {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-left:auto;
+        margin-right:auto;
+        max-width:1200px;
+        width:800px;
+        border:4px grey solid;
+        background-color:lightcyan;
+        
+    }  
+    .navbar {
           display:inline-flex;
-          width:100%;
+          width:inherit;
           text-align:center;
           margin:2px 2px 0 0;
+          color:white;
+          position:fixed;
+          margin-left:auto;
+          margin-right:auto;
       }
 
-      #resume {
+    #bio {
+        margin-top:100px;
+        line-height:40px;
+        width:auto;
+    }
+
+    #projects {
+          width:inherit;
+          font-size:32px;
+          color:blueviolet;
+          line-height:26px;
           display:flex;
-          flex-direction:column;   
+
+      }
+    ul.projects {
+        display:flex;
+        flex-direction:column;
+        width:inherit;
+        height:auto;
+        background-color:gold;
       }
 
-      .projects {
-          display:flex;
-          flex-direction:row;
-          width:60%;
-          height:auto;
-          background-color: grey;
+
+    .imgQuizApp {
+        width:540px;
+        margin-left:auto;
+        margin-right:auto;
       }
 
-      .hamburger {
-          visibility:hidden;
+    .FindMyRatingImg {
+        width:540px;
+        height:740px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #contact-me {
+        display:block;
+        justify-content: space-around;
+        margin-bottom:20px;
+        margin-top:6px;
       }
 
-      .contact-me {
-          display:block;
-          justify-content: space-between;
-          margin-bottom:20px;
-          margin-top:6px;
-      }
-
-      .links {
+    .links {
         list-style-type:none;
         display:inline;
       }
+
+    #live-links {
+        font-size:26px;
+        text-decoration:underline;
+    }
 
   }
