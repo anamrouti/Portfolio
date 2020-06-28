@@ -173,7 +173,7 @@ div ul li {
     }
 
     #projects {
-          width:inherit;
+          width:auto;
           font-size:32px;
           color:blueviolet;
           line-height:26px;
