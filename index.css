@@ -18,7 +18,7 @@ body {
 
 .navbar {
     position: fixed;
-    width:90%;
+    width:inherit;
     height:70px;
     background-color: #5a5a5a; 
     display:flex;
@@ -27,14 +27,13 @@ body {
 }
 
 .navLinks {
-    align-items: center;
-    display:inline-block;
+    align-items: flex-start;
+    display:flex;
     font-size:24px;
     color:white;
     
 
 }
-
 
 
 #bio {
@@ -43,6 +42,9 @@ body {
     margin-top: 40px;
     line-height:30px;
     text-align:center;
+    width:inherit;
+    align-content:center;
+    align-items:center;
 }
 
 .bioText {
@@ -56,6 +58,12 @@ body {
     font-weight:6;
 }
 
+#resume {
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    align-items:center;
+}
 .navbar .links {
     color: #838994;
     align-self:flex-start;
@@ -78,6 +86,7 @@ li {
     margin-top: 50px;
     line-height:30px;
     text-align:center;
+    width:inherit;
 }
   
 nav div ul li:hover {
@@ -104,6 +113,7 @@ a:visited {
     margin-top: 10px;
     line-height:30px;
     text-align:center;
+    width:inherit;
 }
 
 
@@ -111,7 +121,9 @@ a:visited {
     align-self:center;
     align-content:center;
     display:flex;
-    max-width:400px;
+    width:200px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .FindMyRatingImg {
@@ -119,13 +131,13 @@ a:visited {
     align-self:center;
     align-content:center;
     display:flex;
-    width:400px;
+    width:200px;
     margin-left:auto;
     margin-right:auto;
 }
 
 div ul li {
-    display: inline-block; margin-left: 10px; font-size: 20px; margin-top: 20px; margin-right:10px;
+    margin-left: 10px; font-size: 20px; margin-top: 20px; margin-right:10px;
 }
 
 .coding{
@@ -156,7 +168,7 @@ div ul li {
         
     }  
     .navbar {
-          display:inline-flex;
+          display:flex;
           width:inherit;
           text-align:center;
           margin:2px 2px 0 0;
@@ -183,7 +195,7 @@ div ul li {
     ul.projects {
         display:flex;
         flex-direction:column;
-        width:inherit;
+        width:auto;
         height:auto;
         background-color:gold;
       }
@@ -206,6 +218,7 @@ div ul li {
         justify-content: space-around;
         margin-bottom:20px;
         margin-top:6px;
+        width:auto;
       }
 
     .links {
