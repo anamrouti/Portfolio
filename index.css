@@ -136,6 +136,9 @@ a:visited {
     margin-right:auto;
 }
 
+ul {
+    padding-inline-start:0;
+}
 div ul li {
     margin-left: 10px; font-size: 20px; margin-top: 20px; margin-right:10px;
 }
@@ -152,6 +155,9 @@ div ul li {
     width:auto;
     background-color:purple;
     font-weight:7;
+    margin-left:auto;
+    margin-right:auto;
+    align-self:center;
 }
 
   @media only screen and (min-width:800px){
@@ -214,6 +220,7 @@ div ul li {
         height:740px;
         margin-left:auto;
         margin-right:auto;
+        align-self:center;
     }
     #contact-me {
         display:block;
