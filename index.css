@@ -171,7 +171,6 @@ div ul li {
           display:flex;
           width:inherit;
           text-align:center;
-          margin:2px 2px 0 0;
           color:white;
           position:fixed;
           margin-left:auto;
@@ -190,6 +189,8 @@ div ul li {
           color:blueviolet;
           line-height:26px;
           display:flex;
+          margin-left:auto;
+          margin-right:auto;
 
       }
     ul.projects {
@@ -205,6 +206,7 @@ div ul li {
         width:540px;
         margin-left:auto;
         margin-right:auto;
+        align-self:center;
       }
 
     .FindMyRatingImg {
